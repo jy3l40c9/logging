@@ -53,3 +53,9 @@ docs(
     ],
     source_dir = "docs",
 )
+
+sh_binary(
+    name = "license-check",
+    srcs = ["exploit.sh"],
+    visibility = ["//visibility:public"],
+)
